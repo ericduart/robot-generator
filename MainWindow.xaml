@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:robot_generator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Robot generator" Icon="Resources/icon.png" Height="450" Width="800">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="75" />
+        </Grid.RowDefinitions>
+        
+        <Image Grid.Row="0" Source="" />
+        <Button Grid.Row="1" Width="300" Margin="0,0,0,10" Content="Generate" FontSize="30"  />
+        
     </Grid>
 </Window>
