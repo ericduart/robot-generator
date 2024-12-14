@@ -18,18 +18,18 @@
             <Path.Data>
                 <PathGeometry>
                     <PathGeometry.Figures>
-                        <PathFigure StartPoint="20,3" IsClosed="True">
+                        <PathFigure StartPoint="25,2" IsClosed="True">
                             <PathFigure.Segments>
-                                <LineSegment Point="24,14" />
-                                <LineSegment Point="36,15" />
-                                <LineSegment Point="26,24" />
-                                <LineSegment Point="28,36" />
-                                <LineSegment Point="20,30" />
-                                <LineSegment Point="12,36" />
-                                <LineSegment Point="14,24" />
-                                <LineSegment Point="4,15" />
-                                <LineSegment Point="16,14" />
-                                <LineSegment Point="20,3" />
+                                <LineSegment Point="30,15" />
+                                <LineSegment Point="48,18" />
+                                <LineSegment Point="35,30" />
+                                <LineSegment Point="38,48" />
+                                <LineSegment Point="25,40" />
+                                <LineSegment Point="12,48" />
+                                <LineSegment Point="15,30" />
+                                <LineSegment Point="2,18" />
+                                <LineSegment Point="20,15" />
+                                <LineSegment Point="25,2" />
                             </PathFigure.Segments>
                         </PathFigure>
                     </PathGeometry.Figures>
