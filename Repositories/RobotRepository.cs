@@ -37,4 +37,9 @@ public class RobotRepository : BaseRepository<RobotDbContext, Robot>
     {
         Context.Robots.Remove(entity);
     }
+
+    public override void DeleteAll()
+    {
+        Context.Robots.RemoveRange(Context.Robots);
+    }
 }

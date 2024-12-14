@@ -23,6 +23,7 @@ public abstract class BaseRepository<TContext, TModel> : IBaseRepository<TModel>
     public abstract void Update(TModel entity);
 
     public abstract void Delete(TModel entity);
+    public abstract void DeleteAll();
 
     public virtual void SaveChanges()
     {
