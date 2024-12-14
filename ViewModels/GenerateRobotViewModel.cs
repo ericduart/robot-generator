@@ -14,7 +14,7 @@ public class GenerateRobotViewModel : ViewModelBase
 
     public GenerateRobotViewModel()
     {
-        GenerateGuidCommand = new GenerateRobot(GenerateRobot);
+        GenerateGuidCommand = new GenerateRobotCommand(GenerateRobot);
         AddRobotToFavoriteCommand = new AddRobotToFavoriteCommand(AddFavoriteRobot);
         
         string randomGuid = Guid.NewGuid().ToString();

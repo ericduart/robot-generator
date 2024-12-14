@@ -2,12 +2,12 @@ using System.Windows.Input;
 
 namespace robot_generator.Commands;
 
-public class GenerateRobot: ICommand
+public class GenerateRobotCommand: ICommand
 {
 
     private Action<string> _action;
 
-    public GenerateRobot(Action<string> action)
+    public GenerateRobotCommand(Action<string> action)
     {
         _action = action;
     }
