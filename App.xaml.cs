@@ -3,6 +3,8 @@ using System.Data;
 using System.Windows;
 using Microsoft.EntityFrameworkCore;
 using robot_generator.Data;
+using robot_generator.Models;
+using robot_generator.Repositories;
 using robot_generator.VIewModels;
 
 namespace robot_generator;
@@ -15,9 +17,9 @@ public partial class App : Application
     protected override void OnStartup(StartupEventArgs e)
     {
 
-        using (var robotContext = new RobotDbContext())
+        using (var robotRepository = new RobotRepository())
         {
-            robotContext.Database.Migrate();
+            robotRepository.Migrate();
         }
         
         MainWindow mainWindow = new MainWindow()
