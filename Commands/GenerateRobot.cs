@@ -17,7 +17,7 @@ public class GenerateRobot: ICommand
     public void Execute(object? parameter)
     {
         string randomGuid = Guid.NewGuid().ToString();
-        _action($"https://robohash.org/{randomGuid}");
+        _action(randomGuid);
     }
 
     public event EventHandler? CanExecuteChanged;
