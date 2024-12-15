@@ -4,10 +4,16 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:robot_generator.UserControls"
+             xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
              mc:Ignorable="d"
              d:DesignHeight="55" d:DesignWidth="45">
      <Path Stroke="Black" StrokeThickness="2" Fill="Transparent" VerticalAlignment="Center" HorizontalAlignment="Center">
-        <Path.Data>
+         <b:Interaction.Triggers>
+             <b:EventTrigger EventName="MouseLeftButtonUp">
+                 <b:InvokeCommandAction Command="{Binding DownloadCsvCommand}" PassEventArgsToCommand="True" />
+             </b:EventTrigger>
+         </b:Interaction.Triggers>
+         <Path.Data>
             <PathGeometry>
                 <PathGeometry.Figures>
                     <PathFigure StartPoint="0,0">
