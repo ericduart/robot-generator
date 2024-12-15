@@ -2,12 +2,12 @@ using System.Windows.Input;
 
 namespace robot_generator.Commands;
 
-public class GenerateRobot: ICommand
+public class GenerateRobotCommand: ICommand
 {
 
     private Action<string> _action;
 
-    public GenerateRobot(Action<string> action)
+    public GenerateRobotCommand(Action<string> action)
     {
         _action = action;
     }
@@ -17,7 +17,7 @@ public class GenerateRobot: ICommand
     public void Execute(object? parameter)
     {
         string randomGuid = Guid.NewGuid().ToString();
-        _action($"https://robohash.org/{randomGuid}");
+        _action(randomGuid);
     }
 
     public event EventHandler? CanExecuteChanged;
