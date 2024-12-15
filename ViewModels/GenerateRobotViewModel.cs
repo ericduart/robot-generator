@@ -77,7 +77,7 @@ public class GenerateRobotViewModel : ViewModelBase
             if (response == null || (bool)!response) return;
 
             string path = Path.Combine(openFolderDialog.FolderName,
-                $"Robots_{DateTime.Now.ToString("yyyyMMddHHmmss")}");
+                $"Robots_{DateTime.Now.ToString("yyyyMMddHHmmss")}.csv");
             
             IEnumerable<Robot> robots;
 
